@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégia | Portugal Smart City Summit 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .small-chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 40vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-[#003B5C] text-white p-8 text-center shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Portugal Smart City Summit 2026</h1>
+        <p class="text-xl md:text-2xl font-light text-[#94C5E5]">Uma Sessão Estratégica para a Transformação Digital Coordenada</p>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-10">
+
+        <section id="opportunity" class="mb-16">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#003B5C] mb-4">A Oportunidade: Alinhar a Visão Nacional com a Ação Municipal</h2>
+                <p class="text-lg text-gray-600 mb-8">Maio de 2026 representa um momento único. Com um novo Ministério focado na Reforma do Estado, a Agência ARTE em plena implementação e uma nova secção municipal de "Cidades Inteligentes" recém-formada, esta sessão é a ponte crucial entre a estratégia nacional e a execução local. O nosso objetivo é catalisar uma transformação digital unificada, eficiente e centrada no cidadão.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#0A87C4]">
+                    <h3 class="text-2xl font-bold text-[#003B5C] mb-2">Governo Reformador</h3>
+                    <p class="text-gray-600">Um novo mandato focado na digitalização, eficiência e aplicação do princípio "só uma vez".</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#0CAADC]">
+                    <h3 class="text-2xl font-bold text-[#003B5C] mb-2">Municípios Ativados</h3>
+                    <p class="text-gray-600">A nova secção de "Cidades Inteligentes" estará pronta para adotar e implementar novas estratégias.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#94C5E5]">
+                    <h3 class="text-2xl font-bold text-[#003B5C] mb-2">Ecossistema Preparado</h3>
+                    <p class="text-gray-600">BABLE e parceiros prontos para facilitar a colaboração e partilhar conhecimento especializado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reform-pillars" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#003B5C] text-center mb-8">Pilares da Reforma do Estado a Debater</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">A sessão deve focar-se em como os municípios podem alinhar-se e beneficiar dos pilares centrais da reforma governamental, transformando diretrizes nacionais em impacto local tangível.</p>
+            <div class="flex flex-col items-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-2xl text-center mb-4 border-l-8 border-[#003B5C]">
+                    <h3 class="text-2xl font-bold text-[#003B5C]">Ministério da Reforma do Estado</h3>
+                    <p class="text-gray-600">Define a visão e a estratégia global para a modernização.</p>
+                </div>
+                <div class="w-8 h-8 flex items-center justify-center text-[#0A87C4]">▼</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-2xl text-center mb-4 border-l-8 border-[#0A87C4]">
+                    <h3 class="text-2xl font-bold text-[#0A87C4]">CTO do Estado</h3>
+                    <p class="text-gray-600">Lidera a execução técnica e assegura a interoperabilidade.</p>
+                </div>
+                <div class="w-8 h-8 flex items-center justify-center text-[#0CAADC]">▼</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-2xl text-center border-l-8 border-[#0CAADC]">
+                    <h3 class="text-2xl font-bold text-[#0CAADC]">ARTE - Agência para a Reforma Tecnológica</h3>
+                    <p class="text-gray-600">Implementa a transformação, promove IA e otimiza aquisições TIC.</p>
+                </div>
+                <div class="w-px bg-gray-300 h-8"></div>
+                <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="bg-[#E6F4F1] p-4 rounded-lg text-center shadow">
+                        <h4 class="font-bold text-[#046A55]">Princípio "Só Uma Vez"</h4>
+                        <p class="text-sm text-gray-700">Reduzir a burocracia para cidadãos e empresas.</p>
+                    </div>
+                     <div class="bg-[#E6F4F1] p-4 rounded-lg text-center shadow">
+                        <h4 class="font-bold text-[#046A55]">Simplificação Legislativa</h4>
+                        <p class="text-sm text-gray-700">Modernizar códigos de contratação e licenciamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="actors" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#003B5C] text-center mb-8">Atores-Chave a Envolver</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">O sucesso da sessão depende da participação de um grupo diversificado e influente de líderes da administração pública e do ecossistema de inovação.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#003B5C] mb-4">Governo e Agências</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Ministro Adjunto e da Reforma do Estado</strong> (Keynote)</li>
+                        <li>CTO do Estado / Presidente da ARTE</li>
+                        <li>Representantes de Fundos Comunitários (PT2030)</li>
+                        <li>Agência para a Gestão Integrada de Fogos Rurais (AGIF)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#0A87C4] mb-4">Poder Local</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Presidentes de Câmara (da secção "Cidades Inteligentes")</li>
+                        <li>Associação Nacional de Municípios Portugueses (ANMP)</li>
+                        <li>CTOs / Diretores de Inovação Municipais</li>
+                        <li>Líderes de Comunidades Intermunicipais (CIM)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#0CAADC] mb-4">Ecossistema de Inovação</h3>
+                     <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>BABLE Smart Cities (Moderação e Organização)</li>
+                        <li>Empresas de Tecnologia e Consultoria</li>
+                        <li>Universidades e Centros de Investigação</li>
+                        <li>Associações Setoriais (e.g., TICE.PT)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="themes" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#003B5C] text-center mb-8">Temas Propostos para o Debate</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">Os temas devem ser provocadores e orientados para a ação, focando na colaboração e nos desafios práticos da implementação da reforma a nível local.</p>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="chart-container">
+                    <canvas id="themesChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#003B5C] text-center mb-8">Cronograma Estratégico até ao Evento</h2>
+             <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#003B5C] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Setembro 2025</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-600">Definição final do conceito e convite formal ao Sr. Ministro.</p>
+                    </div>
+                </div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0A87C4] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Novembro 2025</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-600">Confirmação dos principais oradores e parceiros estratégicos.</p>
+                    </div>
+                </div>
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0CAADC] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Fevereiro 2026</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-600">Lançamento da comunicação e abertura de inscrições após o Congresso dos Municípios.</p>
+                    </div>
+                </div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#4DB848] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Maio 2026</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-600">Realização da Sessão no Portugal Smart City Summit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="outcomes" class="mb-8">
+             <h2 class="text-3xl font-bold text-[#003B5C] text-center mb-8">Resultados Esperados e Impacto</h2>
+             <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">A sessão não é um fim em si mesma, mas o início de um processo colaborativo. O sucesso será medido pela criação de um compromisso partilhado e pelo lançamento de iniciativas concretas.</p>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <h3 class="text-xl font-bold text-[#003B5C] mb-4">Compromisso Estratégico</h3>
+                    <div class="small-chart-container">
+                        <canvas id="commitmentChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-gray-600">Alinhar as estratégias municipais com a visão nacional da ARTE.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <h3 class="text-xl font-bold text-[#0A87C4] mb-4">Iniciativas Piloto</h3>
+                    <div class="small-chart-container">
+                        <canvas id="pilotsChart"></canvas>
+                    </div>
+                     <p class="mt-4 text-gray-600">Identificar e lançar projetos de colaboração intermunicipais.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <h3 class="text-xl font-bold text-[#4DB848] mb-4">Rede de Cooperação</h3>
+                    <div class="small-chart-container">
+                        <canvas id="networkChart"></canvas>
+                    </div>
+                     <p class="mt-4 text-gray-600">Formalizar um grupo de trabalho para a transformação digital local.</p>
+                </div>
+             </div>
+        </section>
+    </main>
+    
+    <footer class="bg-[#003B5C] text-white text-center p-6 mt-12">
+        <p>Proposta Estratégica elaborada por BABLE Smart Cities</p>
+    </footer>
+
+    <script>
+        const processLabel = (label) => {
+            if (label.length > 16) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > 16) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            return label;
+        };
+        
+        const tooltipTitleCallback = function(tooltipItems) {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            } else {
+              return label;
+            }
+        };
+
+        const themesData = {
+            labels: [
+                "Da Estratégia Nacional à Ação Local: O Papel da ARTE",
+                "O Princípio 'Só Uma Vez': Revolucionar os Serviços Municipais",
+                "Contratação Pública Inteligente para Cidades Inteligentes",
+                "Interoperabilidade e Dados: Um Pacto Nacional-Local",
+                "Financiamento da Transição Digital: Modelos e Oportunidades"
+            ].map(processLabel),
+            datasets: [{
+                label: 'Prioridade do Tema',
+                data: [95, 90, 80, 88, 75],
+                backgroundColor: ['#003B5C', '#0A87C4', '#0CAADC', '#94C5E5', '#E6F4F1'],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+
+        const themesCtx = document.getElementById('themesChart').getContext('2d');
+        new Chart(themesCtx, {
+            type: 'bar',
+            data: themesData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#333' },
+                        grid: { display: false }
+                    },
+                    y: {
+                        ticks: { color: '#333' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+        
+        const createDonutChart = (canvasId, data, color, cut) => {
+             const ctx = document.getElementById(canvasId).getContext('2d');
+             new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Progresso', 'Restante'],
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [color, '#E0E0E0'],
+                        borderColor: '#ffffff',
+                        borderWidth: 4,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: cut,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { title: tooltipTitleCallback } }
+                    }
+                }
+            });
+        };
+        
+        createDonutChart('commitmentChart', [75, 25], '#003B5C', '70%');
+        createDonutChart('pilotsChart', [40, 60], '#0A87C4', '70%');
+        createDonutChart('networkChart', [60, 40], '#4DB848', '70%');
+
+    </script>
+</body>
+</html>
